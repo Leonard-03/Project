@@ -71,10 +71,13 @@
     align-items: center;
     list-style: none;
     text-align: center;
+    
+    
 }
 
 .navbar__item{
     height: 70px;
+    
 }
 
 .navbar__links{
@@ -84,6 +87,9 @@
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    border : none;
+    outline: none;
+    border-radius: 4px;
     
 }
 
@@ -143,7 +149,7 @@
         top: -1000px;
         opacity: 0;
         background: #5eb5c6;
-        transition: all 0.5s ease;
+        transition: all 1s ease;
         z-index: -1;
     }
 
@@ -151,7 +157,7 @@
         background: #5eb5c6;
         top: 100px;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 1s ease;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
@@ -188,7 +194,7 @@
 
     #mobile-menu{
         position: absolute;
-        top: 20%;
+        top: 25%;
         right: 5%;
         transform: translate(5%, 20%);
     }
@@ -216,14 +222,15 @@
     }
 
     #mobile-menu.is-active .bar:nth-child(2){
-        opacity: 0;
+        transform: translate(0px) rotate(90deg);
+        
     }
 
     #mobile-menu.is-active .bar:nth-child(1){
-        transform: translate(8px) rotate(45deg);
+        transform: translate(8px) rotate(90deg);
     }
     
     #mobile-menu.is-active .bar:nth-child(3){
-        transform: translate(-8px) rotate(45deg);
+        transform: translate(-8px) rotate(90deg);
     }
 }
