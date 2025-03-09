@@ -11,7 +11,7 @@
     left: 20%;
     transform: translateX(-20%);
     width: 100px;
-    height: 90px;
+    height: 100px;
     gap: 20px;
 
 
@@ -23,7 +23,7 @@
 
 .navbar {
     background: #5eb5c6;
-    height: 90px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
